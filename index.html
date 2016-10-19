@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CravenCoder Demo</title>
+
+    <link rel="stylesheet" href="htdocs/css/cs-coder.css">
+</head>
+<body>
+
+   <div class="CravenCoderContainer">
+<div class="lineNumbers"><pre id="lineNrs"></pre></div>
+<pre class="CravenCoder js">
+&lt;script&gt;
+(function( newsFeed, $, undefined ) {
+    var newsNumber = 0;
+	var lightBoxElement = $(&quot;#lightboxBg&quot;);
+	// Options
+	var fadeInterval = 1000;
+	
+	// Templates
+	var templates = [
+		[&quot;size1of3&quot;,&quot;size1of3&quot;,&quot;size1of3&quot;,&quot;size2of3&quot;,&quot;size1of3&quot;,&quot;size1of1&quot;],
+		[&quot;size1of1&quot;,&quot;size1of1&quot;,&quot;size1of1&quot;],
+		[&quot;size2of3&quot;,&quot;size1of3&quot;,&quot;size1of1&quot;,&quot;size1of3&quot;,&quot;size1of3&quot;,&quot;size1of3&quot;]
+	];
+	var templateSelected = [];
+	
+    //Public Method
+    newsFeed.init = function(newsFeedElement, templateName, newsItem) {
+		var nF = $(newsFeedElement);
+		
+		setId(&quot;newsItemId&quot; + newsNumber);
+		
+		if(templateSelected.length == 0) {
+			setTemplate(templateName);
+		}
+		
+		if(templateSelected.length &gt; newsNumber) { // Display amount of news according to selected template
+			createNewsItem(nF, newsItem);
+		}
+		
+		var newsItemElement = $( &quot;#&quot; + newsItemId );
+			newsItemElement.fadeIn(fadeInterval);
+
+		newsItemElement.click(function() {
+			newsLightbox(newsItem);
+		});	
+&lt;/script&gt;
+</pre>
+</div>
+
+<script src="htdocs/js/cs-coder.js"></script>
+
+</body>
+</html>

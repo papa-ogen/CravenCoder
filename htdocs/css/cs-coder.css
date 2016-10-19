@@ -1,0 +1,18 @@
+.CravenCoder {z-index: 100; position: absolute; left: 30px; border: 1px solid #000; color: #CDCDCD; background: #4C4C4C; padding: 2rem 0 16px 10px; width: 97.3%;}
+.CravenCoderContainer {position: relative; overflow: scroll; width: 85%; height: 300px;}
+.CravenCoderContainer .lineNumbers {z-index: 500; position: absolute; top: 13px; left: 0; background: #303030; color: #fff; width: 30px; min-height: 100%; padding: 0; margin: 0;}
+.CravenCoderContainer .lineNumbers pre {margin: 0; margin-top: 22px; padding: 12px 0 0 4px;}
+.CravenCoder .ccHeader {position: absolute; top: 5px; left: 0; background: #000; padding: 2px 5px; color: #fff;}
+
+.CravenCoder .color1 {color: #FF7400;}
+.CravenCoder .color2 {color: #FFBD40;}
+.CravenCoder .color3 {color: #33CCCC;}
+.CravenCoder .color4 {color: #77B835;} /* Comment Color */
+.CravenCoder .color5 {color: #9BF046;} /* Light Comment Color */
+
+/* Theme Silver */
+.silver.CravenCoder {color: #000; background: #fff;}
+.silver.CravenCoder .color1 {color: blue;}
+.silver.CravenCoder .color2 {color: red;}
+.silver.CravenCoder .color3 {color: purple;}
+.silver.CravenCoder .color4 {color: green;}
